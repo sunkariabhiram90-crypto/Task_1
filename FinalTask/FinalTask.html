@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fake Store Dashboard</title>
+
+    <link rel="stylesheet" href="FinalTask.css">
+
+    <link rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+</head>
+
+<body>
+
+    <!-- Navbar -->
+
+    <nav class="navbar">
+
+        <div class="logo">
+            <h2>🛒 Fake Store</h2>
+        </div>
+
+        <div class="search-box">
+            <input
+                type="text"
+                id="searchInput"
+                placeholder="Search products..."
+            >
+        </div>
+
+        <div class="category-box">
+
+            <select id="categoryFilter">
+
+                <option value="all">All Categories</option>
+
+                <option value="men's clothing">
+                    Men's Clothing
+                </option>
+
+                <option value="women's clothing">
+                    Women's Clothing
+                </option>
+
+                <option value="electronics">
+                    Electronics
+                </option>
+
+                <option value="jewelery">
+                    Jewelry
+                </option>
+
+            </select>
+
+        </div>
+
+        <div class="cart-btn" id="openCart">
+            <i class="fa-solid fa-cart-shopping"></i>
+            <span id="cartCount">0</span>
+        </div>
+
+    </nav>
+
+    <!-- Statistics -->
+
+    <section class="stats">
+
+        <div class="stat-card">
+            <h3>Total Products</h3>
+            <p id="totalProducts">0</p>
+        </div>
+
+        <div class="stat-card">
+            <h3>Average Price</h3>
+            <p id="avgPrice">$0</p>
+        </div>
+
+        <div class="stat-card">
+            <h3>Highest Price</h3>
+            <p id="highestPrice">$0</p>
+        </div>
+
+        <div class="stat-card">
+            <h3>Lowest Price</h3>
+            <p id="lowestPrice">$0</p>
+        </div>
+
+    </section>
+
+    <!-- Loading -->
+
+    <h2 id="loading">Loading Products...</h2>
+
+    <!-- Products -->
+
+    <section id="productContainer" class="products">
+    </section>
+
+    <!-- Cart Sidebar -->
+
+    <div class="cart-sidebar" id="cartSidebar">
+
+        <div class="cart-header">
+            <h2>Your Cart</h2>
+
+            <button id="closeCart">
+                ✖
+            </button>
+        </div>
+
+        <div id="cartItems"></div>
+
+        <div class="cart-footer">
+            <h3>
+                Total :
+                $<span id="cartTotal">0</span>
+            </h3>
+        </div>
+
+    </div>
+
+    <script src="FinalTask.js"></script>
+
+</body>
+</html>
